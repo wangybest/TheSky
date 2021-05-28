@@ -23,16 +23,16 @@ export default [
             component: '../layouts/BasicLayout',
             authority: ['admin', 'user'],
             routes: [
-  /*            {
-                path: '/',
-                redirect: '/welcome',
-              },
-              {
-                path: '/welcome',
-                name: 'welcome',
-                icon: 'smile',
-                component: './Welcome',
-              },*/
+              /*            {
+                            path: '/',
+                            redirect: '/welcome',
+                          },
+                          {
+                            path: '/welcome',
+                            name: 'welcome',
+                            icon: 'smile',
+                            component: './Welcome',
+                          },*/
               {
                 path: '/admin',
                 name: 'admin',
@@ -53,6 +53,7 @@ export default [
                 name: 'list.table-list',
                 icon: 'table',
                 path: '/list',
+                hideInMenu: true,
                 component: './TableList',
               },
               {

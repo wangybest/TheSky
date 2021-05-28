@@ -9,14 +9,14 @@
 export default {
   dev: {
     '/rest/': {
-      target: 'http://10.128.108.178:35610',
+      target: 'http://1.15.9.165:8080',
       changeOrigin: true,
       pathRewrite: {
         '^': '',
       },
     },
     '/rest': {
-      target: 'http://10.128.108.178:35610',
+      target: 'http://1.15.9.165:8080',
       changeOrigin: true,
       pathRewrite: {
         '^': '',
@@ -25,14 +25,14 @@ export default {
   },
   test: {
     '/api/': {
-      target: 'https://preview.pro.ant.design',
+      target: 'http://1.15.9.165:8080',
       changeOrigin: true,
       pathRewrite: {
         '^': '',
       },
     },
     '/rest': {
-      target: 'http://10.128.108.178:35610',
+      target: 'http://1.15.9.165:8080',
       changeOrigin: true,
       pathRewrite: {
         '^': '',
@@ -48,7 +48,7 @@ export default {
       },
     },
     '/rest': {
-      target: 'http://10.128.108.178:35610',
+      target: 'http://1.15.9.165:8080',
       changeOrigin: true,
       pathRewrite: {
         '^': '',
