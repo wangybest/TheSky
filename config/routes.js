@@ -21,19 +21,19 @@ export default [
           {
             path: '/',
             component: '../layouts/BasicLayout',
-            authority: ['admin', 'user'],
+            // authority: ['admin', 'user'],
             routes: [
-              /*            {
-                            path: '/',
-                            redirect: '/welcome',
-                          },
                           {
+                            path: '/',
+                            redirect: '/excel',
+                          },
+/*                          {
                             path: '/welcome',
                             name: 'welcome',
                             icon: 'smile',
-                            component: './Welcome',
+                            component: './excel/ExcelHandler',
                           },*/
-              {
+/*              {
                 path: '/admin',
                 name: 'admin',
                 icon: 'crown',
@@ -48,14 +48,14 @@ export default [
                     authority: ['admin'],
                   },
                 ],
-              },
-              {
+              },*/
+/*              {
                 name: 'list.table-list',
                 icon: 'table',
                 path: '/list',
                 hideInMenu: true,
                 component: './TableList',
-              },
+              },*/
               {
                 name: 'excel',
                 icon: 'table',
