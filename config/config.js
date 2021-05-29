@@ -34,7 +34,13 @@ export default defineConfig({
   },
   title: false,
   ignoreMomentLocale: true,
-  proxy: proxy[REACT_APP_ENV || 'dev'],
+  // proxy: proxy[REACT_APP_ENV || 'dev'],
+  proxy: {
+    '/rest': {
+      target: 'http://1.15.9.165:8080',
+      changeOrigin: true,
+    },
+  },
   manifest: {
     basePath: '/',
   },
